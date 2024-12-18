@@ -6,7 +6,7 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
 
-from bot.models import CustomUser
+from bot.models import User
 from bot.db import save_user_language
 from bot.keyboards import get_languages, get_main_menu
 from bot.states import UserStates
@@ -24,7 +24,7 @@ bot = Bot(token=settings.BOT_TOKEN, default=DefaultBotProperties(parse_mode=Pars
 async def welcome(message: Message):
     user_id = message.from_user.id
 
-    user = await CustomUser.objects.filter(telegram_id=user_id).afirst()
+    user = await User.objects.filter(telegram_id=user_id).afirst()
 
     if user and user.user_lang:
         main_menu_markup = get_main_menu(user.user_lang)
@@ -59,7 +59,7 @@ async def reg_user_contact(message: Message, state: FSMContext):
     user_lang = user_languages.get(user_id, 'uz')
 
     input_id = message.text.strip()
-    user = await CustomUser.objects.filter(generate_id=input_id).afirst()
+    user = await User.objects.filter(generate_id=input_id).afirst()
     if user:
         full_name = user.full_name if user.full_name else message.from_user.username
         text = f"{user_lang.upper()}:\nXush kelibsiz, {full_name}!"
