@@ -1,34 +1,22 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton, WebAppInfo
-from bot.utils import default_languages
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 
-def get_languages(flag="lang"):
-    keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="O‘zbek 🇺🇿", callback_data=f"{flag}_uz"),
-         InlineKeyboardButton(text="Кирилл  🇺🇿", callback_data=f"{flag}_ru")],
-    ])
-    return keyboard
-
-
-def get_main_menu(user_lang):
+def get_main_menu():
     main_menu_keyboard = ReplyKeyboardMarkup(keyboard=[
         [
-            KeyboardButton(text=default_languages[user_lang]['categories']),
-            KeyboardButton(text=default_languages[user_lang]['contact_us'])
+            KeyboardButton(text="Yangi eslatma qo'shish"),
+            KeyboardButton(text="Eslatmalar ro'yxati")
         ],
         [
-            KeyboardButton(text=default_languages[user_lang]['my_orders']),
-            KeyboardButton(text=default_languages[user_lang]['settings'])
+            KeyboardButton(text="Eslatmani o'chirish"),
+            KeyboardButton(text='Sozlamalar')
         ],
-        [
-            KeyboardButton(text=default_languages[user_lang]['cart'])
-        ]
 
     ], resize_keyboard=True)
     return main_menu_keyboard
 
 
-def get_admin_menu(user_lang):
+def get_admin_menu():
     admin_menu_keyboard = ReplyKeyboardMarkup(keyboard=[
         [
             KeyboardButton(text="👤Statistika"),
@@ -47,3 +35,11 @@ def get_admin_menu(user_lang):
         ]
     ], resize_keyboard=True)
     return admin_menu_keyboard
+
+
+def get_registration_and_login_keyboard():
+    registration_keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text='registration', callback_data='registration')],
+        [InlineKeyboardButton(text='login', callback_data='login')], ])
+
+    return registration_keyboard if registration_keyboard else []

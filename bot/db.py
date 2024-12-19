@@ -1,42 +1,50 @@
 from asgiref.sync import sync_to_async
-from django.db import IntegrityError
-
+from django.db.utils import IntegrityError
+from django.contrib.auth.hashers import make_password
 from bot.models import User
 
 
 @sync_to_async
-def sync_save_user_language(user_id, user_lang):
+def create_user_db(user_data):
+    user_data['phone_number'] = user_data['phone_number'].replace(" ", "").strip()
     try:
-        user, created = User.objects.get_or_create(
-            telegram_id=user_id,
-            defaults={'user_lang': user_lang}
-        )
-
-        if not created:
-            if user.user_lang != user_lang:
-                user.user_lang = user_lang
-                user.save()
-
-    except IntegrityError as e:
-        print(f"IntegrityError: {e}")
-
-
-async def save_user_language(user_id, user_lang):
-    await sync_save_user_language(user_id, user_lang)
-
-
-@sync_to_async
-def save_user_info_to_db(user_data):
-    try:
-        new_user, created = User.objects.update_or_create(
-            telegram_id=user_data['telegram_id'],
-            defaults={
-                "full_name": user_data['full_name'],
-                "phone_number": user_data['phone_number'],
-                "tg_username": user_data['tg_username'],
-                "username": user_data['username']
-            }
-        )
+        new_user = User.objects.create(**user_data)
+        print("####################")
+        print(new_user)
+        print("####################")
         return new_user
     except IntegrityError:
         raise Exception("User already exists")
+
+
+@sync_to_async
+def is_email_exists(email):
+    return User.objects.filter(email=email).exists()
+
+
+@sync_to_async
+def is_phone_exists(phone_number):
+    phone_number = phone_number.replace(" ", "").strip()
+
+    return User.objects.filter(phone_number=phone_number).exists()
+
+
+async def get_user_telegram_id(telegram_id):
+    return await User.objects.filter(telegram_id=telegram_id).afirst()
+
+
+@sync_to_async
+def get_user_username(username):
+    return User.objects.filter(username=username).first()
+
+
+@sync_to_async
+def update_telegram_info(user, user_data):
+    try:
+        user.telegram_id = user_data.get("telegram_id")
+        user.full_name = user_data.get("full_name")
+        user.tg_username = user_data.get("tg_username")
+        user.save()
+        return user
+    except IntegrityError as e:
+        raise Exception(f"Error occurred while updating user: {e}")

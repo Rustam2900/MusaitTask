@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.contrib import messages
-from django.urls import reverse
 from bot.forms import RegistrationForm, ReminderForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
@@ -16,10 +15,12 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            messages.success(request, "Siz ro'yxatdan o'tdingiz")
-            return redirect(reverse('reminder_list'))
+            messages.success(request, "Siz ro'yxatdan muvaffaqiyatli o'tdingiz!")
+            return redirect('reminder_list')
         else:
-            messages.error(request, "error")
+            error_messages = ', '.join(
+                [f"{field}: {error}" for field, errors in form.errors.items() for error in errors])
+            messages.error(request, f"Ro'yxatdan o'tishda xatolik yuz berdi: {error_messages}")
     else:
         form = RegistrationForm()
     return render(request, 'register.html', {'form': form})
@@ -27,11 +28,14 @@ def register(request):
 
 def user_login(request):
     if request.method == 'POST':
-        form = AuthenticationForm(data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('reminder_list')
+        else:
+            return render(request, 'login.html', {'form': AuthenticationForm(), 'error': 'Invalid credentials'})
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})

@@ -34,20 +34,15 @@ class CustomUserManager(UserManager):
 
 
 class User(AbstractUser):
-    ROLE_CHOICES = [
-        ('admin', 'Admin'),
-        ('user', 'User')
-    ]
-    role = models.CharField(max_length=255, choices=ROLE_CHOICES, default='user')
     email = models.EmailField(unique=True)
     full_name = models.CharField(_("full name"), blank=True, max_length=255)
     username = models.CharField(_("username"), blank=True, max_length=255, null=True)
     phone_number = models.CharField(_("phone number"), blank=True, unique=True, validators=[phone_number_validator],
                                     max_length=20)
-    user_lang = models.CharField(_("user language"), blank=True, null=True, max_length=10)
     telegram_id = models.CharField(_("telegram id"), blank=True, null=True, max_length=255, unique=True)
     tg_username = models.CharField(
         _("telegram username"), blank=True, null=True, max_length=255, unique=True)
+    password = models.CharField(_("password"), blank=True, max_length=255)
 
     objects = CustomUserManager()
 
@@ -61,7 +56,7 @@ class User(AbstractUser):
         verbose_name_plural = 'Users'
 
     def __str__(self):
-        return f"Email: {self.email}\nRole: {self.role}"
+        return f"Email: {self.email}"
 
 
 class Reminder(models.Model):

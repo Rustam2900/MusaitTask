@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from bot.models import User, Reminder
+from django.core.exceptions import ValidationError
 
 
 class RegistrationForm(UserCreationForm):
@@ -29,6 +30,19 @@ class RegistrationForm(UserCreationForm):
             'password1': forms.PasswordInput(attrs={'placeholder': 'Enter your password'}),
             'password2': forms.PasswordInput(attrs={'placeholder': 'Confirm your password'}),
         }
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if User.objects.filter(email=email).exists():
+            raise ValidationError(f"Email {email} allaqachon mavjud.")
+        return email
+
+    def clean_phone_number(self):
+        phone_number = self.cleaned_data['phone_number']
+        if User.objects.filter(
+                phone_number=phone_number).exists():
+            raise ValidationError(f"Phone number {phone_number} allaqachon mavjud.")
+        return phone_number
 
 
 class ReminderForm(forms.ModelForm):
