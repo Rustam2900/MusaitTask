@@ -1,4 +1,3 @@
-<!-- add_reminder.html -->
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -56,7 +55,6 @@
             <div class="form-container">
                 <h2 class="text-center mb-4">Yangi Eslatma Qo'shish</h2>
 
-                <!-- Form to add reminder -->
                 <form method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}
@@ -64,7 +62,6 @@
                     <button type="submit" class="btn btn-custom">Saqlash</button>
                 </form>
 
-                <!-- Display messages or errors -->
                 {% if form.errors %}
                     <div class="alert alert-danger mt-4">
                         <strong>Xatolik:</strong> Iltimos, barcha maydonlarni to'ldiring.
