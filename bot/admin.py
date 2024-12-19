@@ -1,7 +1,7 @@
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
-from bot.models import User, Reminder
+from bot.models import User, Reminder, Admin
 
 
 @admin.register(User)
@@ -16,3 +16,10 @@ class ReminderAdmin(TranslationAdmin):
     list_display = ('title', 'user', 'date', 'status')
     search_fields = ('title', 'user__email')
     list_filter = ('status', 'date')
+
+
+@admin.register(Admin)
+class ReminderAdmin(admin.ModelAdmin):
+    list_display = ('id', 'telegram_id', 'create_at')
+    search_fields = ('telegram_id',)
+    list_filter = ('telegram_id',)

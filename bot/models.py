@@ -43,6 +43,7 @@ class User(AbstractUser):
     tg_username = models.CharField(
         _("telegram username"), blank=True, null=True, max_length=255, unique=True)
     password = models.CharField(_("password"), blank=True, max_length=255)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     objects = CustomUserManager()
 
@@ -78,3 +79,8 @@ class Reminder(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Admin(models.Model):
+    telegram_id = models.BigIntegerField(unique=True)
+    create_at = models.DateTimeField(auto_now_add=True)
