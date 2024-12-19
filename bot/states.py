@@ -11,3 +11,7 @@ class UserRegisterStates(StatesGroup):
 class UserLoginStates(StatesGroup):
     username = State()
     parol = State()
+
+
+class SendMessage(StatesGroup):
+    msg = State()

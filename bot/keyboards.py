@@ -22,17 +22,7 @@ def get_admin_menu():
             KeyboardButton(text="👤Statistika"),
             KeyboardButton(text="✍️ Habar yuborish")
         ],
-        [
-            KeyboardButton(text="➕ Mahsulot qo'shish"),
-            KeyboardButton(text="➖ Mahsulot o'chirish")
-        ],
-        [
-            KeyboardButton(text="💸 Min Summa"),
-            KeyboardButton(text="🚫 Foydalanuvchini bloklash")
-        ],
-        [
-            KeyboardButton(text="🚫 Foydalanuvchini blokdan ochish")
-        ]
+
     ], resize_keyboard=True)
     return admin_menu_keyboard
 

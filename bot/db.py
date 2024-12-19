@@ -1,6 +1,9 @@
+from datetime import timedelta
+from django.utils import timezone
+
 from asgiref.sync import sync_to_async
 from django.db.utils import IntegrityError
-from django.contrib.auth.hashers import make_password
+
 from bot.models import User
 
 
@@ -48,3 +51,25 @@ def update_telegram_info(user, user_data):
         return user
     except IntegrityError as e:
         raise Exception(f"Error occurred while updating user: {e}")
+
+
+@sync_to_async
+def get_user_statistics():
+    total_users = User.objects.count()
+
+    time_24_hours_ago = timezone.now() - timedelta(days=1)
+    new_users_24h = User.objects.filter(created_at__gte=time_24_hours_ago).count()
+
+    time_1_month_ago = timezone.now() - timedelta(days=30)
+    new_users_1_month = User.objects.filter(created_at__gte=time_1_month_ago).count()
+
+    return {
+        "total_users": total_users,
+        "new_users_24h": new_users_24h,
+        "new_users_1_month": new_users_1_month
+    }
+
+
+@sync_to_async
+def get_all_users():
+    return list(User.objects.all())
