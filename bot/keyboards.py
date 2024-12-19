@@ -22,6 +22,9 @@ def get_admin_menu():
             KeyboardButton(text="👤Statistika"),
             KeyboardButton(text="✍️ Habar yuborish")
         ],
+        [
+            KeyboardButton(text="Admin add")
+        ]
 
     ], resize_keyboard=True)
     return admin_menu_keyboard

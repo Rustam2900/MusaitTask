@@ -60,7 +60,6 @@ async def show_statistics(message: Message):
         try:
             await message.answer(text=statistics)
         except TelegramBadRequest as e:
-            # Handle the error, e.g., log it or notify the admin
             logging.error(f"Failed to send message to user {user_id}: {str(e)}")
             await message.answer("Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.")
     else:
