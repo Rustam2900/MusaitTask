@@ -78,7 +78,7 @@ async def reg_user_phone_number(message: Message, state: FSMContext):
     phone_number = message.text.strip()
 
     try:
-        phone_number_validator(phone_number)  # Validatorni chaqiramiz
+        phone_number_validator(phone_number)
     except ValidationError:
         await message.answer(
             "Telefon raqami manzilingiz noto'g'ri formatda. "
