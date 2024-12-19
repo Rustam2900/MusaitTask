@@ -22,8 +22,8 @@ logger = logging.getLogger(__name__)
 
 @sync_to_async
 def get_all_user_ids():
-    """Barcha foydalanuvchilarning Telegram ID larini olish."""
-    return list(User.objects.values_list("telegram_id", flat=True))
+    """Faqat telegram_id mavjud bo'lgan foydalanuvchilarni olish."""
+    return list(User.objects.exclude(telegram_id=None).values_list("telegram_id", flat=True))
 
 
 async def notify_users(bot: Bot, message: str):
