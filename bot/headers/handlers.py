@@ -165,3 +165,4 @@ async def get_password(message: Message, state: FSMContext):
         await message.answer(
             text="Bunday foydalanuvchi mavjud emas. Iltimos, qaytadan tekshiring yoki register qiling!")
         await state.clear()
+
