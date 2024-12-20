@@ -4,12 +4,12 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 def get_main_menu():
     main_menu_keyboard = ReplyKeyboardMarkup(keyboard=[
         [
-            KeyboardButton(text="Yangi eslatma qo'shish"),
+            KeyboardButton(text="Yangi eslatma add"),
             KeyboardButton(text="Eslatmalar ro'yxati")
         ],
         [
             KeyboardButton(text="Eslatmani o'chirish"),
-            KeyboardButton(text='Sozlamalar')
+            KeyboardButton(text='Done')
         ],
 
     ], resize_keyboard=True)

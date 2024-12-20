@@ -579,3 +579,428 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'created_at' into fiel
 2024-12-20 04:11:44,820 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
 2024-12-20 04:11:50,380 - aiogram.event - INFO - Update id=498889738 is handled. Duration 343 ms by bot id=8058942905
 2024-12-20 04:11:51,660 - aiogram.event - INFO - Update id=498889739 is handled. Duration 140 ms by bot id=8058942905
+2024-12-20 04:53:05,171 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 04:53:05,830 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 04:53:06,106 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:53:12,301 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 04:53:12,301 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 04:53:12,678 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 04:53:12,680 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 04:53:12,790 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:53:18,713 - aiogram.event - INFO - Update id=498889740 is handled. Duration 343 ms by bot id=8058942905
+2024-12-20 04:53:20,061 - aiogram.event - INFO - Update id=498889741 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 04:54:03,830 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 04:54:04,275 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 04:54:04,535 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:54:09,256 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 04:54:09,257 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 04:54:09,595 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 04:54:09,595 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 04:54:09,711 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:54:15,512 - aiogram.event - INFO - Update id=498889742 is handled. Duration 344 ms by bot id=8058942905
+2024-12-20 04:54:16,316 - aiogram.event - INFO - Update id=498889743 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 04:57:46,743 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 04:57:47,229 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 04:57:47,495 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:57:52,269 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 04:57:52,269 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 04:57:52,598 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 04:57:52,598 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 04:57:52,708 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:57:57,835 - aiogram.event - INFO - Update id=498889744 is handled. Duration 343 ms by bot id=8058942905
+2024-12-20 04:58:00,004 - aiogram.event - INFO - Update id=498889745 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 04:59:42,903 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 04:59:43,546 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 04:59:43,806 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:59:48,571 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 04:59:48,572 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 04:59:48,903 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 04:59:48,903 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 04:59:49,005 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 04:59:52,536 - aiogram.event - INFO - Update id=498889746 is handled. Duration 312 ms by bot id=8058942905
+2024-12-20 04:59:54,442 - aiogram.event - INFO - Update id=498889747 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 05:01:18,238 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 05:01:18,718 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 05:01:18,968 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:01:23,746 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 05:01:23,746 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 05:01:24,087 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 05:01:24,088 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 05:01:24,191 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:01:29,020 - aiogram.event - INFO - Update id=498889748 is handled. Duration 328 ms by bot id=8058942905
+2024-12-20 05:01:30,375 - aiogram.event - INFO - Update id=498889749 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 05:02:23,182 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 05:02:23,653 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 05:02:23,918 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:02:28,518 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 05:02:28,518 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 05:02:28,828 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 05:02:28,829 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 05:02:28,933 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:02:32,617 - aiogram.event - INFO - Update id=498889750 is handled. Duration 343 ms by bot id=8058942905
+2024-12-20 05:02:33,543 - aiogram.event - INFO - Update id=498889751 is handled. Duration 125 ms by bot id=8058942905
+2024-12-20 05:02:45,379 - aiogram.event - INFO - Update id=498889752 is handled. Duration 156 ms by bot id=8058942905
+2024-12-20 05:03:23,050 - aiogram.event - INFO - Update id=498889753 is handled. Duration 327 ms by bot id=8058942905
+2024-12-20 05:04:22,138 - aiogram.event - INFO - Update id=498889754 is handled. Duration 359 ms by bot id=8058942905
+2024-12-20 05:11:20,518 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 05:11:21,073 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 05:11:21,345 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:11:27,258 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 05:11:27,258 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 05:11:27,596 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 05:11:27,596 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 05:11:27,714 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:11:35,094 - aiogram.event - INFO - Update id=498889755 is handled. Duration 625 ms by bot id=8058942905
+2024-12-20 05:11:36,384 - aiogram.event - INFO - Update id=498889756 is handled. Duration 125 ms by bot id=8058942905
+2024-12-20 05:11:40,411 - aiogram.event - INFO - Update id=498889757 is handled. Duration 110 ms by bot id=8058942905
+2024-12-20 05:12:20,788 - aiogram.event - INFO - Update id=498889758 is handled. Duration 358 ms by bot id=8058942905
+2024-12-20 05:13:08,098 - aiogram.event - INFO - Update id=498889759 is not handled. Duration 0 ms by bot id=8058942905
+2024-12-20 05:13:08,099 - aiogram.event - ERROR - Cause exception while process update id=498889759 by bot id=8058942905
+TypeError: can't compare offset-naive and offset-aware datetimes
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\bot\headers\handlers.py", line 202, in get_date
+    if date <= current_time:
+       ^^^^^^^^^^^^^^^^^^^^
+TypeError: can't compare offset-naive and offset-aware datetimes
+2024-12-20 05:15:16,708 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 05:15:17,412 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 05:15:17,682 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:15:23,118 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 05:15:23,119 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 05:15:23,489 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 05:15:23,490 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 05:15:23,608 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:15:28,298 - aiogram.event - INFO - Update id=498889760 is handled. Duration 405 ms by bot id=8058942905
+2024-12-20 05:15:29,554 - aiogram.event - INFO - Update id=498889761 is handled. Duration 141 ms by bot id=8058942905
+2024-12-20 05:15:36,482 - aiogram.event - INFO - Update id=498889762 is handled. Duration 516 ms by bot id=8058942905
+2024-12-20 05:15:43,566 - aiogram.event - INFO - Update id=498889763 is handled. Duration 125 ms by bot id=8058942905
+2024-12-20 05:15:50,227 - aiogram.event - INFO - Update id=498889764 is not handled. Duration 16 ms by bot id=8058942905
+2024-12-20 05:15:50,227 - aiogram.event - ERROR - Cause exception while process update id=498889764 by bot id=8058942905
+SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\bot\headers\handlers.py", line 213, in get_date
+    user = await get_user_by_telegram_id(message.from_user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\bot\db.py", line 79, in get_user_by_telegram_id
+    user = User.objects.filter(telegram_id=telegram_id).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 1057, in first
+    for obj in queryset[:1]:
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1558, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\utils\asyncio.py", line 24, in inner
+    raise SynchronousOnlyOperation(message)
+django.core.exceptions.SynchronousOnlyOperation: You cannot call this from an async context - use a thread or sync_to_async.
+2024-12-20 05:17:33,013 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 05:17:33,537 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 05:17:33,794 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:17:39,884 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 05:17:39,885 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 05:17:40,427 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 05:17:40,427 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 05:17:40,538 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 05:17:44,898 - aiogram.event - INFO - Update id=498889765 is handled. Duration 421 ms by bot id=8058942905
+2024-12-20 05:17:46,043 - aiogram.event - INFO - Update id=498889766 is handled. Duration 171 ms by bot id=8058942905
+2024-12-20 05:17:53,656 - aiogram.event - INFO - Update id=498889767 is handled. Duration 125 ms by bot id=8058942905
+2024-12-20 05:17:58,406 - aiogram.event - INFO - Update id=498889768 is handled. Duration 140 ms by bot id=8058942905
+2024-12-20 05:18:02,878 - aiogram.event - INFO - Update id=498889769 is not handled. Duration 14 ms by bot id=8058942905
+2024-12-20 05:18:02,879 - aiogram.event - ERROR - Cause exception while process update id=498889769 by bot id=8058942905
+ValueError: Cannot assign "<User: Email: vali@gmail.com>": "Reminder.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\bot\headers\handlers.py", line 215, in get_date
+    reminder = Reminder.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\modeltranslation\manager.py", line 412, in create
+    return super().create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\modeltranslation\translator.py", line 312, in new_init
+    old_init(self, *args, **kwargs)
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: Email: vali@gmail.com>": "Reminder.user" must be a "User" instance.
+2024-12-20 06:15:15,988 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2024-12-20 06:15:16,005 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8058942905)
+2024-12-20 06:15:27,435 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8058942905)
+2024-12-20 06:17:29,245 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 06:17:29,871 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 06:17:30,145 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 06:17:37,107 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-20 06:17:37,107 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-20 06:17:37,492 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-20 06:17:37,494 - aiogram.dispatcher - INFO - Start polling
+2024-12-20 06:17:37,605 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-20 06:17:42,966 - aiogram.event - INFO - Update id=498889770 is handled. Duration 358 ms by bot id=8058942905
+2024-12-20 06:17:44,254 - aiogram.event - INFO - Update id=498889771 is handled. Duration 139 ms by bot id=8058942905
+2024-12-20 06:17:47,082 - aiogram.event - INFO - Update id=498889772 is handled. Duration 141 ms by bot id=8058942905
+2024-12-20 06:17:49,177 - aiogram.event - INFO - Update id=498889773 is handled. Duration 125 ms by bot id=8058942905
+2024-12-20 06:17:56,102 - aiogram.event - INFO - Update id=498889774 is not handled. Duration 47 ms by bot id=8058942905
+2024-12-20 06:17:56,103 - aiogram.event - ERROR - Cause exception while process update id=498889774 by bot id=8058942905
+ValueError: Cannot assign "<User: Email: vali@gmail.com>": "Reminder.user" must be a "User" instance.
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 156, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 128, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 123, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 148, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\bot\headers\handlers.py", line 215, in get_date
+    reminder = Reminder.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\modeltranslation\manager.py", line 412, in create
+    return super().create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\query.py", line 656, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\modeltranslation\translator.py", line 312, in new_init
+    old_init(self, *args, **kwargs)
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\base.py", line 543, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "C:\Users\user\Desktop\MusaitTask\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 266, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: Email: vali@gmail.com>": "Reminder.user" must be a "User" instance.
+2024-12-20 06:26:38,544 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-20 06:26:39,147 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-20 06:26:39,422 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'

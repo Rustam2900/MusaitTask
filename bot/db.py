@@ -4,7 +4,7 @@ from django.utils import timezone
 from asgiref.sync import sync_to_async
 from django.db.utils import IntegrityError
 
-from bot.models import User
+from bot.models import User, Reminder
 
 
 @sync_to_async
@@ -73,3 +73,32 @@ def get_user_statistics():
 @sync_to_async
 def get_all_users():
     return list(User.objects.all())
+
+
+@sync_to_async
+def get_user_by_telegram_id_sync(telegram_id: int):
+    user = User.objects.filter(telegram_id=telegram_id).first()
+    return user
+
+
+async def get_user_by_telegram_id(telegram_id: int):
+    user = await get_user_by_telegram_id_sync(telegram_id)
+    if user:
+        return user
+    else:
+        user_data = {
+            'telegram_id': telegram_id,
+        }
+        return await create_user_db(user_data)
+
+
+@sync_to_async
+def reminder_add_db(reminder_data):
+    try:
+        reminder_new = Reminder.objects.create(**reminder_data)
+        print("####################")
+        print(reminder_new)
+        print("####################")
+        return reminder_new
+    except IntegrityError:
+        raise Exception("User already exists")

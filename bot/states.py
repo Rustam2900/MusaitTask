@@ -15,3 +15,9 @@ class UserLoginStates(StatesGroup):
 
 class SendMessage(StatesGroup):
     msg = State()
+
+
+class ReminderStates(StatesGroup):
+    title = State()
+    content = State()
+    date = State()

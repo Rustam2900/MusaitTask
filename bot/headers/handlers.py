@@ -3,17 +3,20 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
-
-from bot.db import create_user_db, is_email_exists, is_phone_exists, \
-    get_user_username, get_user_telegram_id, update_telegram_info
-from bot.keyboards import get_main_menu, get_registration_and_login_keyboard
-from bot.states import UserRegisterStates, UserLoginStates
-from django.contrib.auth.hashers import make_password, check_password
-from bot.validators import validate_email, phone_number_validator, validate_password
+from datetime import datetime
 from django.conf import settings
 from aiogram.client.default import DefaultBotProperties
 from aiogram.utils.text_decorations import html_decoration as fmt
 from django.core.exceptions import ValidationError
+from django.contrib.auth.hashers import make_password, check_password
+from django.utils import timezone
+
+from bot.db import create_user_db, is_email_exists, is_phone_exists, \
+    get_user_username, get_user_telegram_id, update_telegram_info, get_user_by_telegram_id, reminder_add_db
+from bot.keyboards import get_main_menu, get_registration_and_login_keyboard
+from bot.models import Reminder
+from bot.states import UserRegisterStates, UserLoginStates, ReminderStates
+from bot.validators import validate_email, phone_number_validator, validate_password
 
 router = Router()
 bot = Bot(token=settings.BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
@@ -166,3 +169,59 @@ async def get_password(message: Message, state: FSMContext):
             text="Bunday foydalanuvchi mavjud emas. Iltimos, qaytadan tekshiring yoki register qiling!")
         await state.clear()
 
+
+@router.message(F.text == "Yangi eslatma add")
+async def reg_user_contact(message: Message, state: FSMContext):
+    await message.answer(text="title kiriting")
+    await state.set_state(ReminderStates.title)
+
+
+@router.message(ReminderStates.title)
+async def get_title(message: Message, state: FSMContext):
+    title = message.text
+    await state.update_data(title=title)
+    await message.answer("Eslatma kontentini kiriting:")
+    await state.set_state(ReminderStates.content)
+
+
+@router.message(ReminderStates.content)
+async def get_content(message: Message, state: FSMContext):
+    content = message.text
+    await state.update_data(content=content)
+    await message.answer("Eslatma sanasini kiriting (yyyy-mm-dd hh:mm formatida):")
+    await state.set_state(ReminderStates.date)
+
+
+@router.message(ReminderStates.date)
+async def get_date(message: Message, state: FSMContext):
+    date_str = message.text
+    try:
+        date = datetime.strptime(date_str, '%Y-%m-%d %H:%M')
+
+        current_time = timezone.now().replace(tzinfo=None)
+        if date <= current_time:
+            await message.answer("Sana hozirgi vaqtdan o'tgan. Iltimos, kelajakdagi sana kiriting.")
+            return
+    except ValueError:
+        await message.answer("Iltimos, sanani to'g'ri formatda kiriting (yyyy-mm-dd hh:mm):")
+        return
+
+    user_data = await state.get_data()
+    title = user_data.get('title')
+    content = user_data.get('content')
+    print("####################################")
+    print("##########", user_data)
+    print("####################################")
+    user = await get_user_by_telegram_id(message.from_user.id)
+    # user_data = (
+    #     title=title,
+    #     content=content,
+    #     date=date,
+    #     user=user,
+    #     status='pending'
+    # )
+    result = await reminder_add_db(user_data)
+
+    await message.answer(f"Eslatma yaratildi:\n{result.title} - {result.date.strftime('%Y-%m-%d %H:%M')}")
+
+    await state.clear()
