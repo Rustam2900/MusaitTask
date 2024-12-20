@@ -9,11 +9,14 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.utils.text_decorations import html_decoration as fmt
 from django.core.exceptions import ValidationError
 from django.contrib.auth.hashers import make_password, check_password
+from django.templatetags.tz import localtime
 from django.utils import timezone
 
 from bot.db import create_user_db, is_email_exists, is_phone_exists, \
-    get_user_username, get_user_telegram_id, update_telegram_info, get_user_by_telegram_id, reminder_add_db
+    get_user_username, get_user_telegram_id, update_telegram_info, get_user_by_telegram_id, reminder_add_db, \
+    get_user_reminders_list, get_user_reminders_done
 from bot.keyboards import get_main_menu, get_registration_and_login_keyboard
+from bot.models import Reminder
 from bot.states import UserRegisterStates, UserLoginStates, ReminderStates
 from bot.validators import validate_email, phone_number_validator, validate_password
 
@@ -170,7 +173,7 @@ async def get_password(message: Message, state: FSMContext):
 
 
 @router.message(F.text == "Yangi eslatma add")
-async def reg_user_contact(message: Message, state: FSMContext):
+async def reminder_add(message: Message, state: FSMContext):
     await message.answer(text="title kiriting")
     await state.set_state(ReminderStates.title)
 
@@ -236,3 +239,43 @@ async def get_date(message: Message, state: FSMContext):
         await message.answer(f"Eslatma yaratishda xatolik yuz berdi: {str(e)}")
 
     await state.clear()
+
+
+@router.message(F.text == "Eslatmalar ro'yxati")
+async def reminder_list(message: Message):
+    user_id = message.from_user.id
+
+    reminders = await get_user_reminders_list(user_id)
+
+    if reminders:
+        reminder_text = "Eslatmalar ro'yxati:\n\n"
+        for reminder in reminders:
+            reminder_text += f"🔔 {reminder.title}\n"
+            reminder_text += f"📅 Vaqt: {localtime(reminder.date).strftime('%d-%m-%Y %H:%M:%S')}\n"
+            reminder_text += f"📜 Mazmuni: {reminder.content}\n"
+            reminder_text += f"📌 Holati: {reminder.get_status_display()}\n"
+            reminder_text += "_______________________________________________\n\n"
+
+        await message.answer(text=reminder_text)
+    else:
+        await message.answer(text="Sizda eslatmalar mavjud emas.")
+
+
+@router.message(F.text == "Done")
+async def completed_reminders(message: Message):
+    user_id = message.from_user.id
+
+    completed_reminders = await get_user_reminders_done(user_id)
+
+    if completed_reminders:
+        reminder_text = "Bajarilgan eslatmalar:\n\n"
+        for reminder in completed_reminders:
+            reminder_text += f"🔔 {reminder.title}\n"
+            reminder_text += f"📅 Vaqt: {localtime(reminder.date).strftime('%d-%m-%Y %H:%M:%S')}\n"
+            reminder_text += f"📜 Mazmuni: {reminder.content}\n"
+            reminder_text += f"📌 Holati: {reminder.get_status_display()}\n"
+            reminder_text += "_______________________________________________\n\n"
+
+        await message.answer(text=reminder_text)
+    else:
+        await message.answer(text="Sizda bajarilgan eslatmalar mavjud emas.")

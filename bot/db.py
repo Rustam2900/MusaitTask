@@ -102,3 +102,31 @@ def reminder_add_db(reminder_data):
         return reminder_new
     except IntegrityError as e:
         raise Exception(f"Ma'lumotlar bazasida xatolik: {str(e)}")
+
+
+@sync_to_async
+def get_user_reminders_list(user_id):
+    try:
+        user = User.objects.get(telegram_id=user_id)
+        reminder = Reminder.objects.filter(user=user)
+        return list(reminder)
+    except User.DoesNotExist:
+        print("bunday telegram id topilmadi")
+        return []
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return []
+
+
+@sync_to_async
+def get_user_reminders_done(user_id):
+    try:
+        user = User.objects.get(telegram_id=user_id)
+        reminder = Reminder.objects.filter(user=user, status="completed")
+        return list(reminder)
+    except User.DoesNotExist:
+        print("bunday telagram id topilmadi")
+        return []
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return []
