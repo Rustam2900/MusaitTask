@@ -8,7 +8,7 @@ def get_main_menu():
             KeyboardButton(text="Eslatmalar ro'yxati")
         ],
         [
-            KeyboardButton(text="Eslatmani o'chirish"),
+            KeyboardButton(text="Eslatmani delete"),
             KeyboardButton(text='Done')
         ],
 

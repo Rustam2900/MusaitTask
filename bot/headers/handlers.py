@@ -2,8 +2,10 @@ from aiogram import Bot, Router, F
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
-from aiogram.types import Message, CallbackQuery
+from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime
+
+from asgiref.sync import sync_to_async
 from django.conf import settings
 from aiogram.client.default import DefaultBotProperties
 from aiogram.utils.text_decorations import html_decoration as fmt
@@ -262,11 +264,9 @@ async def reminder_list(message: Message):
 
 
 @router.message(F.text == "Done")
-async def completed_reminders(message: Message):
+async def reminder_done(message: Message):
     user_id = message.from_user.id
-
     completed_reminders = await get_user_reminders_done(user_id)
-
     if completed_reminders:
         reminder_text = "Bajarilgan eslatmalar:\n\n"
         for reminder in completed_reminders:
@@ -279,3 +279,51 @@ async def completed_reminders(message: Message):
         await message.answer(text=reminder_text)
     else:
         await message.answer(text="Sizda bajarilgan eslatmalar mavjud emas.")
+
+
+async def get_reminder_keyboard(user_id):
+    reminders = await get_user_reminders_list(user_id)
+    inline_kb = InlineKeyboardMarkup(row_width=2, inline_keyboard=[])
+    inline_buttons = []
+
+    for reminder in reminders:
+        inline_buttons.append(
+            InlineKeyboardButton(
+                text=f"{reminder.title} ({reminder.date})",
+                callback_data=f"delete_{reminder.id}",
+            )
+        )
+
+    inline_kb.inline_keyboard = [
+        inline_buttons[i: i + 2] for i in range(0, len(inline_buttons), 2)
+    ]
+    return inline_kb
+
+
+@router.message(F.text == "Eslatmani delete")
+async def reminder_delete(message: Message):
+    user_id = message.from_user.id
+
+    keyboard = await get_reminder_keyboard(user_id)
+    if keyboard.inline_keyboard:
+        await message.answer(
+            text="O'chiriladigan Eslatma tanlang:",
+            reply_markup=keyboard,
+        )
+    else:
+        await message.answer("Hozircha eslatma mavjud emas.")
+
+
+@router.callback_query(lambda c: c.data.startswith("delete_"))
+async def confirm_delete_product(callback: CallbackQuery):
+    reminder_id = int(callback.data.split("_")[1])
+    try:
+        reminder = await sync_to_async(Reminder.objects.get)(id=reminder_id)
+        await sync_to_async(reminder.delete)()
+        await callback.message.edit_text(
+            f"Eslatma '{reminder.title}' muvaffaqiyatli o'chirildi!"
+        )
+    except Reminder.DoesNotExist:
+        await callback.message.edit_text(
+            "Tanlangan Eslatma topilmadi yoki allaqachon o'chirilgan."
+        )

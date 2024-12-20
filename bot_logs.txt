@@ -1,0 +1,24 @@
+2024-12-21 03:43:00,803 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-21 03:43:01,273 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-21 03:43:01,549 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-21 03:43:07,004 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-21 03:43:07,005 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-21 03:43:07,488 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-21 03:43:07,489 - aiogram.dispatcher - INFO - Start polling
+2024-12-21 03:43:07,598 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-21 03:43:13,233 - aiogram.event - INFO - Update id=498889840 is handled. Duration 312 ms by bot id=8058942905
+2024-12-21 03:43:15,785 - aiogram.event - INFO - Update id=498889841 is handled. Duration 141 ms by bot id=8058942905
+2024-12-21 03:43:17,679 - aiogram.event - INFO - Update id=498889842 is handled. Duration 155 ms by bot id=8058942905
+2024-12-21 03:43:24,366 - aiogram.event - INFO - Update id=498889843 is not handled. Duration 15 ms by bot id=8058942905
+2024-12-21 03:46:03,811 - aiogram.dispatcher - INFO - Polling stopped
+2024-12-21 03:46:04,237 - root - INFO - Hamma foydalanuvchilarga bot ishdan to'xtagani haqida xabar yuborildi.
+2024-12-21 03:46:04,487 - aiogram.dispatcher - INFO - Polling stopped for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-21 03:46:09,382 - bot.management.commands.run_bot - INFO - Buyruqlar o'rnatildi.
+2024-12-21 03:46:09,383 - bot.management.commands.run_bot - INFO - Router ulandi.
+2024-12-21 03:46:09,911 - root - INFO - Hamma foydalanuvchilarga bot ishga tushgani haqida xabar yuborildi.
+2024-12-21 03:46:09,911 - aiogram.dispatcher - INFO - Start polling
+2024-12-21 03:46:10,020 - aiogram.dispatcher - INFO - Run polling for bot @MusaitTaskbot id=8058942905 - 'MusaitTask'
+2024-12-21 03:46:15,000 - aiogram.event - INFO - Update id=498889844 is handled. Duration 328 ms by bot id=8058942905
+2024-12-21 03:46:17,356 - aiogram.event - INFO - Update id=498889845 is handled. Duration 155 ms by bot id=8058942905
+2024-12-21 03:46:19,213 - aiogram.event - INFO - Update id=498889846 is handled. Duration 140 ms by bot id=8058942905
+2024-12-21 03:46:20,803 - aiogram.event - INFO - Update id=498889847 is handled. Duration 141 ms by bot id=8058942905
