@@ -69,7 +69,7 @@ class Reminder(models.Model):
     title = models.CharField(_("title"), max_length=255)
     content = models.TextField(_("content"))
     date = models.DateTimeField()
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
 
     class Meta:

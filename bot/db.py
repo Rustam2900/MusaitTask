@@ -75,14 +75,8 @@ def get_all_users():
     return list(User.objects.all())
 
 
-@sync_to_async
-def get_user_by_telegram_id_sync(telegram_id: int):
-    user = User.objects.filter(telegram_id=telegram_id).first()
-    return user
-
-
 async def get_user_by_telegram_id(telegram_id: int):
-    user = await get_user_by_telegram_id_sync(telegram_id)
+    user = await get_user_telegram_id(telegram_id)
     if user:
         return user
     else:
@@ -95,10 +89,16 @@ async def get_user_by_telegram_id(telegram_id: int):
 @sync_to_async
 def reminder_add_db(reminder_data):
     try:
-        reminder_new = Reminder.objects.create(**reminder_data)
+        reminder_new = Reminder.objects.create(
+            title=reminder_data['title'],
+            content=reminder_data['content'],
+            date=reminder_data['date'],
+            user=reminder_data['user'],
+            status=reminder_data['status']
+        )
         print("####################")
         print(reminder_new)
         print("####################")
         return reminder_new
-    except IntegrityError:
-        raise Exception("User already exists")
+    except IntegrityError as e:
+        raise Exception(f"Ma'lumotlar bazasida xatolik: {str(e)}")

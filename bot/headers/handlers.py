@@ -14,7 +14,6 @@ from django.utils import timezone
 from bot.db import create_user_db, is_email_exists, is_phone_exists, \
     get_user_username, get_user_telegram_id, update_telegram_info, get_user_by_telegram_id, reminder_add_db
 from bot.keyboards import get_main_menu, get_registration_and_login_keyboard
-from bot.models import Reminder
 from bot.states import UserRegisterStates, UserLoginStates, ReminderStates
 from bot.validators import validate_email, phone_number_validator, validate_password
 
@@ -188,7 +187,8 @@ async def get_title(message: Message, state: FSMContext):
 async def get_content(message: Message, state: FSMContext):
     content = message.text
     await state.update_data(content=content)
-    await message.answer("Eslatma sanasini kiriting (yyyy-mm-dd hh:mm formatida):")
+    await message.answer("Eslatma sanasini kiriting (yyyy-mm-dd hh:mm formatida): \n"
+                         "Namuna: 2025-12-20 15:30")
     await state.set_state(ReminderStates.date)
 
 
@@ -197,31 +197,42 @@ async def get_date(message: Message, state: FSMContext):
     date_str = message.text
     try:
         date = datetime.strptime(date_str, '%Y-%m-%d %H:%M')
-
         current_time = timezone.now().replace(tzinfo=None)
-        if date <= current_time:
-            await message.answer("Sana hozirgi vaqtdan o'tgan. Iltimos, kelajakdagi sana kiriting.")
+        if date < current_time:
+            await message.answer("Sana hozirgi vaqtdan o'tgan. Iltimos, kelajakdagi sana kiriting.\n"
+                                 "Namuna: 2025-12-20 15:30")
             return
     except ValueError:
-        await message.answer("Iltimos, sanani to'g'ri formatda kiriting (yyyy-mm-dd hh:mm):")
+        await message.answer("Iltimos, sanani to'g'ri formatda kiriting (yyyy-mm-dd hh:mm):\n"
+                             "Namuna: 2025-12-20 15:30")
         return
 
     user_data = await state.get_data()
     title = user_data.get('title')
     content = user_data.get('content')
+
     print("####################################")
     print("##########", user_data)
     print("####################################")
-    user = await get_user_by_telegram_id(message.from_user.id)
-    # user_data = (
-    #     title=title,
-    #     content=content,
-    #     date=date,
-    #     user=user,
-    #     status='pending'
-    # )
-    result = await reminder_add_db(user_data)
 
-    await message.answer(f"Eslatma yaratildi:\n{result.title} - {result.date.strftime('%Y-%m-%d %H:%M')}")
+    user = await get_user_by_telegram_id(message.from_user.id)
+    if not user:
+        await message.answer("Foydalanuvchi tizimda ro'yxatdan o'tmagan.")
+        return
+
+    reminder_data = {
+        'title': title,
+        'content': content,
+        'date': date,
+        'user': user,
+        'status': 'Pending'
+    }
+
+    try:
+        result = await reminder_add_db(reminder_data)
+        print("#####################################", result.title)
+        await message.answer(f"Eslatma yaratildi:")
+    except Exception as e:
+        await message.answer(f"Eslatma yaratishda xatolik yuz berdi: {str(e)}")
 
     await state.clear()
