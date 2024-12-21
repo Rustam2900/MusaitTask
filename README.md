@@ -1,14 +1,16 @@
 ## MusaitTask
 
+
 ___
 
 * Git clone project
-* python -m venv venv
-* source venv/bin/activate and .\venv\Scripts\activate
+
+      python -m venv venv
+      source venv/bin/activate and .\venv\Scripts\activate
 * Installing requirements.txt
 
-      pip install -r requirements.txt
-* python manage.py
+        pip install -r requirements.txt
+* python manage.py 
 * Alembic init
 
         alembic init migrations
@@ -19,3 +21,13 @@ ___
 * Alembic upgrade
 
         alembic upgrade head
+* Let's launch the project
+
+         uvicorn main:app --reload
+
+
+
+### Thank you all [Temirovuz](https://github.com/temirovuz) was with you 🙂.
+___
+
+![image](https://github.com/temirovuz/news_FastAPI/assets/100820263/ad07393e-59de-4374-83af-3fd6987a7b27)
