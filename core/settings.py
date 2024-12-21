@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'bot',
-    'widget_tweaks'
+    'widget_tweaks',
+    'django_celery_beat'
 ]
 
 MIDDLEWARE = [
@@ -116,6 +117,18 @@ MEDIA_ROOT = BASE_DIR / 'media'
 LOCALE_PATHS = [
     BASE_DIR / 'locale/',
 ]
+
+CELERY_BROKER_URL = 'redis://localhost:6381/0'
+CELERY_RESULT_BACKEND = 'redis://localhost:6381/0'
+CELERY_TIMEZONE = "Asia/Tashkent"
+CELERY_TASK_TRACK_STARTED = True
+CELERY_BEAT_SCHEDULE = {
+    'send-reminder-task': {
+        'task': 'bot.tasks.send_reminder',
+        'schedule': 60.0,
+    },
+}
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
