@@ -107,3 +107,14 @@ async def send_message(message: Message, state: FSMContext):
         ),
         parse_mode=ParseMode.HTML,
     )
+
+
+# @router.message(F.text == "Admin add")
+# async def admin_add(message: Message):
+#     user_id = message.from_user.id
+#     if is_admin(user_id):
+#         await message.answer(text="Admin qo'shish uchun ID yuboring")
+#     else:
+#         await message.answer('Sizga bu buyruqdan foydalana olmaysiz')
+
+
