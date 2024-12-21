@@ -16,6 +16,9 @@ ___
 * runserver
 
       python manage.py runserver
+* Bot run
+
+      python manage.py run_bot
 * Alembic init
 
         alembic init migrations
